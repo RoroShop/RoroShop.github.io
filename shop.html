@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roro Shop</title>
+
+        <link rel="icon" type="image/x-icon" href="/img/icon1.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="style.css">
+
+
+        <style>
+            /* Define the bounce animation for the icon */
+            @keyframes bounce {
+                0% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+    
+            /* Button styling */
+            button {
+                background: none; /* Remove background color */
+                border: none;
+                cursor: pointer;
+            }
+    
+            /* Icon styling */
+            button i {
+                font-size: 30px;
+                color: black;
+                transition: all 0.3s ease-in-out;
+            }
+    
+            /* Add animation on button click */
+            button:active i {
+                animation: bounce 0.3s ease;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <script>
+            function addToCart(id) {
+                console.log("Item " + id + " added to the cart!");
+            }
+        </script>
+
+        <section id="header">
+            <a href="#"><img src="img/logo.png" class="logo" alt="" width="140" height="60"></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                  
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class='bx bx-shopping-bag' ></i></a></li>
+                    <a href="#" id="close"><i class='bx bx-x'></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class='bx bx-shopping-bag' ></i></a>
+                <i id="bar" class='bx bx-menu'></i>
+            </div>
+        </section>
+
+        <section id="page-header">
+             
+        </section> 
+
+        <section id="product1" class="section-p1">
+            <h2>Produits Vedettes</h2>
+
+            <div class="pro-container">
+                <div class="pro">
+                    <img class="shirt" src="img/products/f1.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Carry Sport Porte Plastique Bleue                        </h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>30dt</h4>
+                    </div>
+                    <button onclick="addToCart(1)"><i class='bx bx-cart cart' ></i></button>
+                    
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/f2.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>IMAC Baggy Cage de Transport 36x25x29cm</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>10dt</h4>
+                    </div>
+                    <button onclick="addToCart(2)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/f3.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Jouet chat Trainning WHEEL vert</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>12dt</h4>
+                    </div>
+                    <button onclick="addToCart(3)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/f4.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Jouet Petite Souris pour Chat 5 cm</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>20dt</h4>
+                    </div>
+                    <button onclick="addToCart(4)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/f5.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Collier et Laisse de Luxe </h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>10dt</h4>
+                    </div>
+
+                    <button onclick="addToCart(5)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/f6.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Manteau pour Chien Coco Rose</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>12dt</h4>
+                    </div>
+                    <button onclick="addToCart(6)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/f7.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Menforsan Spray Apaisant</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>20dt</h4>
+                    </div>
+                    <button onclick="addToCart(7)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/f8.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Panier Sofa ouatiné</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>10dt</h4>
+                    </div>
+                    <button onclick="addToCart(8)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="product1" class="section-p1">
+            <h2>Nouvelle Arrivées</h2>
+
+            <div class="pro-container">
+                <div class="pro">
+                    <img class="shirt" src="img/products/n1.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Peigne à Puces Poignée Confort 19 cm</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>12dt</h4>
+                    </div>
+                    <button onclick="addToCart(9)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/n2.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Pelle Giulietta</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>20dt</h4>
+                    </div>
+                    <button onclick="addToCart(10)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/n3.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Pelle Giulietta</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>10dt</h4>
+                    </div>
+                    <button onclick="addToCart(11)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/n4.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Royal canin CHAT HAIR & SKIN 2 Kg</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>12dt</h4>
+                    </div>
+                    <button onclick="addToCart(12)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/n5.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Royal canin CHAT HAIR & SKIN 2 Kg</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>20dt</h4>
+                    </div>
+                    <button onclick="addToCart(13)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/n6.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Royal canin CHAT HAIR & SKIN 2 Kg</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>10dt</h4>
+                    </div>
+                    <button onclick="addToCart(14)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/n7.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>SIMBA CHAT MOUSSE THON POISSON 85 GR</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>12dt</h4>
+                    </div>
+                    <button onclick="addToCart(15)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+                <div class="pro">
+                    <img class="shirt" src="img/products/n8.jpg" alt="">
+                    <div class="des">
+                        
+                        <h5>Balle de Tennis Smash Jaune</h5>
+                        <div class="star">
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                            <i class='bx bxs-star' ></i>
+                        </div>
+                        <h4>20dt</h4>
+                    </div>
+                    <button onclick="addToCart(16)"><i class='bx bx-cart cart' ></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagination" class="section-p1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class='bx bx-right-arrow-alt'></i></a>
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Inscrivez-vous à la newsletter</h4>
+                <p>Recevez des mises à jour par e-mail sur nos dernières boutiques et <span>offres spéciales.</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Votre adresse e-mail">
+                <button class="normal">S'inscrire</button>
+            </div>
+        </section>
+        
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="./img/logo.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Adresse :</strong> 562 Wellington Road, Rue 32, San Francisco</p>
+                <p><strong>Téléphone :</strong> +01 2222 345 / (+91) 0 123 456 789</p>
+                <p><strong>Heures :</strong> 10:00 - 18:00, Lun - Sam</p>
+                <div class="follow">
+                    <h4>Suivez-nous</h4>
+                    <div class="icon">
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-pinterest-alt'></i>
+                        <i class='bx bxl-youtube'></i>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col">
+                <h4>À propos</h4>
+                <a href="#">À propos de nous</a>
+                <a href="#">Informations de livraison</a>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Termes et conditions</a>
+                <a href="#">Contactez-nous</a>
+            </div>
+        
+            <div class="col">
+                <h4>Mon compte</h4>
+                <a href="#">Se connecter</a>
+                <a href="#">Voir le panier</a>
+                <a href="#">Ma liste de souhaits</a>
+                <a href="#">Suivre ma commande</a>
+                <a href="#">Aide</a>
+            </div>
+        
+            <div class="col install">
+                <h4>Installer l'application</h4>
+                <p>Depuis l'App Store ou Google Play</p>
+                <div class="row">
+                    <img src="./img/pay/app.jpg" alt="">
+                    <img src="./img/pay/play.jpg" alt="">
+                </div>
+                <p>Passerelles de paiement sécurisées</p>
+                <img src="./img/pay/pay.png" alt="">
+            </div>
+        
+           
+        </footer>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>

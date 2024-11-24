@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier d'Achat</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="" width="140" height="60"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="shop.html">Boutique</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+                <a href="#" id="close"><i class='bx bx-x'></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+            <i id="bar" class='bx bx-menu'></i>
+        </div>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%" id="cart-items">
+            <thead>
+                <tr>
+                    <td>Retirer</td>
+                    <td>Image</td>
+                    <td>Produit</td>
+                    <td>Prix</td>
+                    <td>Quantité</td>
+                    <td>Sous-total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Les articles du panier seront injectés dynamiquement ici -->
+            </tbody>
+        </table>
+        <div id="subtotal">
+            <h3>Total du Panier</h3>
+            <table>
+                <tr>
+                    <td>Sous-total du panier</td>
+                    <td id="cart-subtotal">0</td>
+                </tr>
+                <tr>
+                    <td>Livraison</td>
+                    <td>Gratuit</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="cart-total"><strong>0</strong></td>
+                </tr>
+            </table>
+            <button class="normal" id="checkout">Procéder au Paiement</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="copyright">
+            <p>© 2024, Site de E-Commerce Exemple</p>
+        </div>
+    </footer>
+</body>
+</html>
